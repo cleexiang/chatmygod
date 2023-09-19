@@ -1,5 +1,6 @@
 import streamlit as st
 import openai
+import langchain
 
 def generate_response(prompt):
     st.session_state['messages'].append({"role": "user", "content": prompt})
